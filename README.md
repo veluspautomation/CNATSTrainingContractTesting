@@ -18,11 +18,11 @@ On another terminal, run:
 
 ## Running the web consumer tests
 
-We are using [Pactflow](https://pactflow.io/) as the Pact broker. To use Pactflow , register for their free developer plan and export your Pactflow Broker URL and API token:
+We are using [PactFlow](https://pactflow.io/) as the Pact broker. To use PactFlow , register for their free developer plan and export your PactFlow Broker URL and API token:
 
 ```
-export PACT_BROKER_URL=<PACT_BROKER_URL here>
-export PACT_API_TOKEN=<API_TOKEN here>
+export PACT_BROKER_BASE_URL=<PACT_BROKER_BASE_URL here>
+export PACT_BROKER_TOKEN=<PACT_BROKER_TOKEN here>
 ```
 
 Run the web consumer tests:
@@ -41,4 +41,4 @@ Run the GraphQL consumer tests:
 
 ## Running tests as part of GitHub actions
 
-To run the tests as part of a CI pipeline using GitHub actions, store the PACT_BROKER_URL and PACT_API_TOKEN as secrets to your forked repo.
+To run the tests as part of a CI pipeline using GitHub actions, store the `PACT_BROKER_BASE_URL` and `PACT_BROKER_TOKEN` as secrets to your forked repo.
